@@ -823,6 +823,13 @@ select.form-control {
   border: 4px solid white;
 }
 
+
+.photo-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .contact-details {
   min-width: 0;
 }
