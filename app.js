@@ -8,9 +8,9 @@
     // Configuration and data
     const CONFIG = {
         personalInfo: {
-            name: 'Alex Johnson',
-            title: 'Full Stack Developer & UI/UX Designer',
-            company: 'TechCorp Solutions',
+            name: 'R.K.Gupta',
+            title: 'Chief Executive Officer',
+            company: 'Arawali Mines and Minerals',
             email: 'alex.johnson@example.com',
             phone: '+1 (555) 123-4567',
             location: 'San Francisco, CA',
