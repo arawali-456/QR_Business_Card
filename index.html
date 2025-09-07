@@ -1,20 +1,143 @@
-Alex Johnson
-Full Stack Developer & UI/UX Designer
-TechCorp Solutions
-Crafting digital experiences that make a difference
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Johnson - Digital Business Card</title>
+    <meta name="description" content="Digital business card for Alex Johnson - Full Stack Developer & UI/UX Designer">
+    
+    <!-- External Dependencies -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Hero Header Section -->
+    <header class="hero-header">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-name">Alex Johnson</h1>
+                <p class="hero-title">Full Stack Developer & UI/UX Designer</p>
+                <p class="hero-company">TechCorp Solutions</p>
+                <p class="hero-tagline">Crafting digital experiences that make a difference</p>
+            </div>
+        </div>
+    </header>
 
-Alex Johnson
-TechCorp Solutions
-alex.johnson@example.com
-+1 (555) 123-4567
-San Francisco, CA
-Visit My Website
-Connect with me
-LinkedIn GitHub Twitter Instagram
-Copy Email Save Contact
-Share this contact
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Contact Card Section -->
+            <section class="contact-card">
+                <div class="card">
+                    <div class="card__body">
+                        <div class="contact-layout">
+                            <div class="contact-photo">
+                                <div class="photo-placeholder">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                            </div>
+                            <div class="contact-details">
+                                <h2 class="contact-name">Alex Johnson</h2>
+                                <p class="contact-company">TechCorp Solutions</p>
+                                <div class="contact-info">
+                                    <div class="contact-item">
+                                        <i class="fas fa-envelope"></i>
+                                        <a href="mailto:alex.johnson@example.com" class="contact-link">
+                                            alex.johnson@example.com
+                                        </a>
+                                    </div>
+                                    <div class="contact-item">
+                                        <i class="fas fa-phone"></i>
+                                        <a href="tel:+15551234567" class="contact-link">
+                                            +1 (555) 123-4567
+                                        </a>
+                                    </div>
+                                    <div class="contact-item">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span class="contact-text">San Francisco, CA</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-Scan to share my contact information
-© 2025 Alex Johnson. All rights reserved.
-Made with ❤️
+            <!-- Website Call-to-Action -->
+            <section class="website-cta">
+                <a href="https://alexjohnson.dev" target="_blank" class="btn btn--primary btn--lg btn--full-width cta-button">
+                    <i class="fas fa-globe"></i>
+                    Visit My Website
+                </a>
+            </section>
 
+            <!-- Social Links Section -->
+            <section class="social-links">
+                <h3 class="section-title">Connect with me</h3>
+                <div class="social-grid">
+                    <a href="https://linkedin.com/in/alexjohnson" target="_blank" class="social-link linkedin" aria-label="LinkedIn Profile">
+                        <i class="fab fa-linkedin-in"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/alexjohnson" target="_blank" class="social-link github" aria-label="GitHub Profile">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://twitter.com/alexjohnson" target="_blank" class="social-link twitter" aria-label="Twitter Profile">
+                        <i class="fab fa-twitter"></i>
+                        <span>Twitter</span>
+                    </a>
+                    <a href="https://instagram.com/alexjohnson" target="_blank" class="social-link instagram" aria-label="Instagram Profile">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Action Buttons Section -->
+            <section class="action-buttons">
+                <div class="button-grid">
+                    <button id="copyEmailBtn" class="btn btn--secondary btn--lg action-btn" aria-label="Copy Email Address">
+                        <i class="fas fa-copy"></i>
+                        Copy Email
+                    </button>
+                    <button id="saveContactBtn" class="btn btn--outline btn--lg action-btn" aria-label="Save Contact as vCard">
+                        <i class="fas fa-download"></i>
+                        Save Contact
+                    </button>
+                </div>
+            </section>
+
+            <!-- QR Code Generator Section -->
+            <section class="qr-section">
+                <h3 class="section-title">Share this contact</h3>
+                <div class="qr-container">
+                    <div id="qrcode" class="qr-display"></div>
+                    <p class="qr-text">Scan to share my contact information</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">© 2025 Alex Johnson. All rights reserved.</p>
+                <p class="footer-made">Made with ❤️</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast hidden">
+        <span id="toastMessage"></span>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
