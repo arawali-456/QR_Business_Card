@@ -11,16 +11,15 @@
             name: 'R.K.Gupta',
             title: 'Chief Executive Officer',
             company: 'Arawali Mines and Minerals',
-            email: 'alex.johnson@example.com',
-            phone: '+1 (555) 123-4567',
-            location: 'San Francisco, CA',
-            website: 'https://alexjohnson.dev'
+            email: 'arawaliminesbsw@gmail.com',
+            phone: '+918955645272',
+            location: 'Udaipur, Rajasthan',
+            website: 'https://arawaliminerals.com/'
         },
         socialLinks: {
-            linkedin: 'https://linkedin.com/in/alexjohnson',
-            github: 'https://github.com/alexjohnson',
-            twitter: 'https://twitter.com/alexjohnson',
-            instagram: 'https://instagram.com/alexjohnson'
+            linkedin: 'https://linkedin.com/in/arawaliminerals',
+            twitter: 'https://twitter.com/arawaliminerals',
+            instagram: 'https://instagram.com/arawaliminerals'
         },
         qrOptions: {
             width: 200,
